@@ -1,0 +1,5 @@
+fastapi
+boto3==1.34.34
+pandas==2.2.1
+uvicorn
+python-dotenv==1.0.1
