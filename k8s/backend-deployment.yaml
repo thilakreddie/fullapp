@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: f1-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: f1-backend
+  template:
+    metadata:
+      labels:
+        app: f1-backend
+    spec:
+      containers:
+        - name: f1-backend
+          image: gtr55/f1-backend:latest
+          ports:
+            - containerPort: 8000
